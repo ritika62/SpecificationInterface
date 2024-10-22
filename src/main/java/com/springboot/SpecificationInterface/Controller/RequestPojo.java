@@ -2,9 +2,7 @@ package com.springboot.SpecificationInterface.Controller;
 
 import lombok.*;
 
-@Setter
-@Getter
-@ToString
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class RequestPojo {

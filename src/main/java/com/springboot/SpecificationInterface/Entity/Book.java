@@ -3,9 +3,7 @@ package com.springboot.SpecificationInterface.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-    @Setter
-    @Getter
-    @ToString
+   @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @Entity
