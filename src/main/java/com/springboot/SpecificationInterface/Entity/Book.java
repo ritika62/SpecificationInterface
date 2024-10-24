@@ -7,7 +7,7 @@ import lombok.*;
     @AllArgsConstructor
     @NoArgsConstructor
     @Entity
-    @Table(name="bookable")
+    @Table(name="books")
     public class Book {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,6 +16,6 @@ import lombok.*;
         private String author;
         private Long price;
         private String category;
-    }
+   }
 
 

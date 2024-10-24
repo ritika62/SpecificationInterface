@@ -21,7 +21,7 @@ public class BookSpecification {
                 criteriabuilder.gt(root.get("price"), price);
     }
 
-    public static Specification<Book> searchBooks(RequestPojo requestPojo) {
+    public static Specification<Book> filterBooks(RequestPojo requestPojo) {
         Specification<Book> spec = Specification.where(null);
         if(requestPojo.getBookName()!=null) {
             spec = spec.and(hasBookName(requestPojo.getBookName()));

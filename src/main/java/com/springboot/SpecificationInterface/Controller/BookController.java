@@ -12,13 +12,10 @@ public class BookController {
 
     private BookService bookService;
 
-    @PostMapping("/books/search")
-    public List<Book> searchBooks(@RequestBody RequestPojo requestPojo){
-        return bookService.searchBooks(requestPojo);
+    @PostMapping("/books/filter")
+    public List<Book> filterBooks(@RequestBody RequestPojo requestPojo) {
+        return bookService.filterBooks(requestPojo);
     }
-
-
-
 }
 
 

@@ -13,10 +13,10 @@ import java.util.List;
 @AllArgsConstructor
 public class BookService {
 
-    private BookDao bookDao;
+    private  final BookDao bookDao;
 
-    public List<Book> searchBooks(RequestPojo requestPojo) {
-        Specification<Book> spec = BookSpecification.searchBooks(requestPojo);
+    public List<Book> filterBooks(RequestPojo requestPojo) {
+        Specification<Book> spec = BookSpecification.filterBooks(requestPojo);
 
     return bookDao.findAll(spec);
     }}
