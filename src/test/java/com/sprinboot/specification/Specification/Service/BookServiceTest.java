@@ -76,7 +76,7 @@ public void testFilterBooks_BookNameAndPriceGreaterThanOrAuthor() {
 
 @Test
 public void testFilterBooks_AuthorAndpriceGreaterThanOrBookName() {
-       requestPojo.setAuthor("Sona");
+       requestPojo.setAuthor("Harry");
     requestPojo.setPriceGreaterThan(1100l);
     requestPojo.setBookName("Spring");
     requestPojo.setAndParameter1("author");
