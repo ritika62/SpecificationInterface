@@ -6,7 +6,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 public class BookSpecification {
 
-    public static Specification<Book> hasBookName(String bookName) {
+ public static Specification<Book> hasBookName(String bookName) {
         return (root, query, criteriaBuilder) ->
                 criteriaBuilder.equal(root.get("bookName"), bookName);
     }
@@ -71,3 +71,4 @@ public class BookSpecification {
         return specAnd.and(specOr);
     }
 }
+

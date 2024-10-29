@@ -9,10 +9,14 @@ public class RequestPojo {
     private String bookName;
     private String author;
     private Long priceGreaterThan;
-    private String andParameter1;
-    private String andParameter2;
-    private String orParameter1;
+        private String andParameter1;
+        private String andParameter2;
+        private String orParameter1;
 
 
-}
+    }
+
+
+
+
 
